@@ -1,10 +1,10 @@
 # Blog Project
+
 ## Joy of React, Project III
 
 In this project, we'll build an interactive MDX-based blog using Next 13:
 
 ![Screenshot of the final product](/docs/end-result.png)
-
 
 ## Getting Started
 
@@ -34,6 +34,7 @@ npm run new-component [TheNewComponentName]
 ## Troubleshooting
 
 - When you run a dev server, you may notice a warning: _You have enabled experimental feature (outputFileTracingIncludes)_. This warning can safely be ignored. `outputFileTracingIncludes` is a configuration option required to make sure that our MDX files are included when deploying our application to Vercel.
+
   - If you're curious about this, you can learn more [in Module 6 of the course](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/07.01-rendering-strategies-exercises#failed-vercel-deploys)
 
 - If the dev server seems to be stuck on a stale error, and restarting the dev server doesn't help, you can clear Next's cache by deleting the `.next/cache` subdirectory. Don't worry about losing anything important: everything inside the `.next` directory is derived from the rest of the codebase.
@@ -97,18 +98,13 @@ For example, here's the metadata we should include, in the `<head>`:
 
 ```html
 <title>Bits & Bytes</title>
-<meta
-  name="description"
-  content="A wonderful blog about JavaScript"
-/>
+<meta name="description" content="A wonderful blog about JavaScript" />
 ```
 
 And on the blog post page, it should look something like this:
 
 ```html
-<title>
-  Understanding the JavaScript Modulo Operator • Bits & Bytes
-</title>
+<title>Understanding the JavaScript Modulo Operator • Bits & Bytes</title>
 <meta
   name="description"
   content="One of the most commonly-misunderstood operators…"
@@ -161,7 +157,6 @@ The “Understanding the JavaScript Modulo Operator” blog post makes use of tw
 
 **This is a significant challenge.** To help keep things a bit more manageable, we'll break this exercise up into 3 parts.
 
-
 ### Exercise 5A: Rendering embedded components
 
 First thing's first, we need to get this component rendering!
@@ -171,7 +166,7 @@ Inside the `javascript-modulo-operator.mdx` file, you'll notice that some code h
 ```md
 **TODO: Uncomment DivisionGroupsDemo**
 
-{/* <DivisionGroupsDemo /> */}
+{/_ <DivisionGroupsDemo /> _/}
 ```
 
 If you uncomment this code, you'll get an error telling you that next-mdx-remote doesn't know how to resolve the `DivisionGroupsDemo`.
@@ -190,7 +185,6 @@ This component exists, and you can find it in `/src/components/DivisionGroupsDem
 - [“MDX in Next.js” lesson](https://courses.joshwcomeau.com/joy-of-react/project-blog/01.02-mdx-in-next)
 - [next-mdx-remote docs](https://github.com/hashicorp/next-mdx-remote#custom-components)
 - [“Lazy Loading in Next”](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/10.01-lazy-loading-in-next)
-
 
 ### Exercise 5B: Animations with Framer Motion
 
@@ -216,7 +210,6 @@ Let's implement some _layout animations_, so that the pink circles being grouped
 - [“Working With Groups” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/04.01-layout-groups)
 - [“Motion Accessibility” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/05-accessibility)
 
-
 ### Exercise 5C: Remainder area
 
 If you keep scrolling down inside `javascript-modulo-operator.mdx`, you'll notice another instance of `DivisionGroupsDemo` which has been commented out:
@@ -224,7 +217,7 @@ If you keep scrolling down inside `javascript-modulo-operator.mdx`, you'll notic
 ```md
 **TODO: Uncomment DivisionGroupsDemo**
 
-{/* <DivisionGroupsDemo includeRemainderArea={true} numOfItems={11} initialNumOfGroups={4} /> */}
+{/_ <DivisionGroupsDemo includeRemainderArea={true} numOfItems={11} initialNumOfGroups={4} /> _/}
 ```
 
 If you haven't already, you can uncomment this second `DivisionGroupsDemo` element. Your mission in this final part of the exercise is to ensure that the layout animations continue working as expected:
@@ -236,7 +229,6 @@ If you haven't already, you can uncomment this second `DivisionGroupsDemo` eleme
 ![Screen recording showing how elements should stack in the Remainder Area](/docs/division-groups-remainder-stack-direction.gif)
 
 **NOTE:** to help illustrate the difference, I've given the items different colors/shapes in this GIF. You don't need to incorporate this change; your items should all be pink circles.
-
 
 **Acceptance Criteria:**
 
@@ -297,9 +289,7 @@ Inside the root layout (`/src/app/layout.js`), you'll see that the theme is curr
 
 - [“Dark Mode” lesson](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/11-dark-mode)
 
-
 ---
-
 
 ## Stretch goals
 
