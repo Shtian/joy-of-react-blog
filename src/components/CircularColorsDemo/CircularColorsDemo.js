@@ -64,7 +64,7 @@ function CircularColorsDemo() {
         <div className={styles.actions}>
           <button onClick={toggleTimer}>
             {isPlaying ? <Pause /> : <Play />}
-            <VisuallyHidden>Play</VisuallyHidden>
+            <VisuallyHidden>{isPlaying ? "Pause" : "Play"}</VisuallyHidden>
           </button>
           <button onClick={resetTimer}>
             <RotateCcw />
@@ -97,6 +97,7 @@ const useTimeElapsed = () => {
 
   function resetTimer() {
     setTimeElapsed(0);
+    setIsPlaying(false);
   }
 
   return [timeElapsed, toggleTimer, resetTimer, isPlaying];
