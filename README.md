@@ -45,7 +45,7 @@ npm run new-component [TheNewComponentName]
 
 ## Exercise 1: Homepage list of posts
 
-Let's update the homepage so that it shows a list of blog posts:
+<!-- Let's update the homepage so that it shows a list of blog posts:
 
 ![Screenshot showing the homepage with a reverse-chronological list of blog posts](/docs/homepage-list-of-posts.png)
 
@@ -57,13 +57,13 @@ Let's update the homepage so that it shows a list of blog posts:
   - `slug`, matching the filename (eg. `javascript-modulo-operator`)
   - `title`, `abstract`, and `publishedOn`, all passed along from the frontmatter for each post.
 
-**Note:** To help with some of the Node file-manipulation stuff, a helper module has been provided, `/src/helpers/file-helpers.js`. You can use the `getBlogPostList` function to gather the full list of blog posts. Alternatively, if you some experience using Node, feel free to solve this exercise without using this helper.
+**Note:** To help with some of the Node file-manipulation stuff, a helper module has been provided, `/src/helpers/file-helpers.js`. You can use the `getBlogPostList` function to gather the full list of blog posts. Alternatively, if you some experience using Node, feel free to solve this exercise without using this helper. -->
 
 ---
 
 ## Exercise 2: Displaying MDX
 
-When clicking on one of the blog posts on the homepage, we're taken to the dynamic blog post route:
+<!-- When clicking on one of the blog posts on the homepage, we're taken to the dynamic blog post route:
 
 ![Screenshot showing the blog post layout with the initial placeholder content](/docs/blog-post-before-mdx.png)
 
@@ -86,13 +86,13 @@ The final result should look like this:
 - [“MDX in Next.js” lesson](https://courses.joshwcomeau.com/joy-of-react/project-blog/01.02-mdx-in-next)
 - [next-mdx-remote docs](https://github.com/hashicorp/next-mdx-remote#react-server-components-rsc--nextjs-app-directory-support)
   - **Be sure to use the _RSC_ version of the package!**
-- [“Dynamic Segments” lesson](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/04.03-dynamic-segments)
+- [“Dynamic Segments” lesson](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/04.03-dynamic-segments) -->
 
 ---
 
 ## Exercise 3: Adding metadata
 
-As we learned in Module 6, the [Next.js Metadata API](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/05-metadata) allows us to specify site metadata, like adding a `<title>` tag, or various `<meta>` tags. Let's use this API to add metadata to our blog.
+<!-- As we learned in Module 6, the [Next.js Metadata API](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/05-metadata) allows us to specify site metadata, like adding a `<title>` tag, or various `<meta>` tags. Let's use this API to add metadata to our blog.
 
 For example, here's the metadata we should include, in the `<head>`:
 
@@ -121,13 +121,13 @@ And on the blog post page, it should look something like this:
 **Resources:**
 
 - [“Next.js Metadata API” lesson](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/05-metadata)
-- [Next Metadata API official docs](https://nextjs.org/docs/app/building-your-application/optimizing/metadata)
+- [Next Metadata API official docs](https://nextjs.org/docs/app/building-your-application/optimizing/metadata) -->
 
 ---
 
 ## Exercise 4: Code snippets with Bright
 
-Our MDX files include code snippets. By default, they'll be rendered by `<MDXRemote>` as a `<pre>` tag. This _works_, but it's not very ✨ aesthetic ✨. We can improve the presentation using [Bright](https://bright.codehike.org/), the React-Server-Components-based syntax highlighter we saw in Module 6.
+<!-- Our MDX files include code snippets. By default, they'll be rendered by `<MDXRemote>` as a `<pre>` tag. This _works_, but it's not very ✨ aesthetic ✨. We can improve the presentation using [Bright](https://bright.codehike.org/), the React-Server-Components-based syntax highlighter we saw in Module 6.
 
 This package is already installed in this repository, and is being used inside the `/src/components/CodeSnippet` component. Your mission in this exercise is to render this `CodeSnippet` component for every code snippet inside the MDX files.
 
@@ -145,13 +145,13 @@ The end result should look like this:
 - [Bright docs](https://bright.codehike.org/)
 - [“MDX in Next.js” lesson](https://courses.joshwcomeau.com/joy-of-react/project-blog/01.02-mdx-in-next)
 - [next-mdx-remote docs](https://github.com/hashicorp/next-mdx-remote#custom-components)
-- [“Revealable Code Snippets” exercise](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/03.04-client-components-exercises#revealable-code-snippets-with-bright)
+- [“Revealable Code Snippets” exercise](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/03.04-client-components-exercises#revealable-code-snippets-with-bright) -->
 
 ---
 
 ## Exercise 5: Animated division widget
 
-So far, our blog posts don't really feature anything super custom. Let's change that.
+<!-- So far, our blog posts don't really feature anything super custom. Let's change that.
 
 The “Understanding the JavaScript Modulo Operator” blog post makes use of two different embedded widgets. In this exercise, we'll focus on the first one, `DivisionGroupsDemo`.
 
@@ -184,11 +184,11 @@ This component exists, and you can find it in `/src/components/DivisionGroupsDem
 
 - [“MDX in Next.js” lesson](https://courses.joshwcomeau.com/joy-of-react/project-blog/01.02-mdx-in-next)
 - [next-mdx-remote docs](https://github.com/hashicorp/next-mdx-remote#custom-components)
-- [“Lazy Loading in Next”](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/10.01-lazy-loading-in-next)
+- [“Lazy Loading in Next”](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/10.01-lazy-loading-in-next) -->
 
 ### Exercise 5B: Animations with Framer Motion
 
-As it stands, the `DivisionGroupsDemo` widget works alright, but it does feel pretty abrupt:
+<!-- As it stands, the `DivisionGroupsDemo` widget works alright, but it does feel pretty abrupt:
 
 ![Screen recording showing the default behaviour, instant transitions](/docs/division-groups-default.gif)
 
@@ -208,7 +208,7 @@ Let's implement some _layout animations_, so that the pink circles being grouped
 - [“Layout Animations” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/03-layout-animations)
 - [“Shared Layout” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/04-layout-id)
 - [“Working With Groups” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/04.01-layout-groups)
-- [“Motion Accessibility” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/05-accessibility)
+- [“Motion Accessibility” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/05-accessibility) -->
 
 ### Exercise 5C: Remainder area
 
