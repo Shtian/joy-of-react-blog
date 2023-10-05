@@ -212,7 +212,7 @@ Let's implement some _layout animations_, so that the pink circles being grouped
 
 ### Exercise 5C: Remainder area
 
-If you keep scrolling down inside `javascript-modulo-operator.mdx`, you'll notice another instance of `DivisionGroupsDemo` which has been commented out:
+<!-- If you keep scrolling down inside `javascript-modulo-operator.mdx`, you'll notice another instance of `DivisionGroupsDemo` which has been commented out:
 
 ```md
 **TODO: Uncomment DivisionGroupsDemo**
@@ -239,13 +239,13 @@ If you haven't already, you can uncomment this second `DivisionGroupsDemo` eleme
 
 - [“Layout Animations” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/03-layout-animations)
 - [“Shared Layout” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/04-layout-id)
-- [“Working With Groups” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/04.01-layout-groups)
+- [“Working With Groups” lesson](https://courses.joshwcomeau.com/joy-of-react/07-framer-motion/04.01-layout-groups) -->
 
 ---
 
 ## Exercise 6: Circular colors widget
 
-Our “Understanding the JavaScript Modulo Operator” blog post has one more embedded widget, `CircularColorsDemo`:
+<!-- Our “Understanding the JavaScript Modulo Operator” blog post has one more embedded widget, `CircularColorsDemo`:
 
 ![Screen recording of the `CircularColorsDemo` component](/docs/circular-colors-demo.gif)
 
@@ -266,7 +266,7 @@ This widget demonstrates how the Modulo operator can be used to select items fro
 
 - [The blog post itself!](https://project-blog-dun.vercel.app/javascript-modulo-operator) This is very meta, but the blog post we've been working on details how the Modulo operator works, and you'll want to use this operator in your solution.
 - [“Side Effects” set of lessons from Module 3](https://courses.joshwcomeau.com/joy-of-react/03-hooks/05-effects)
-  - In particular, the [“Digital Clock” Exercise](https://courses.joshwcomeau.com/joy-of-react/03-hooks/05.07-cleanup-exercises#digital-clock) might be helpful.
+  - In particular, the [“Digital Clock” Exercise](https://courses.joshwcomeau.com/joy-of-react/03-hooks/05.07-cleanup-exercises#digital-clock) might be helpful. -->
 
 ---
 
