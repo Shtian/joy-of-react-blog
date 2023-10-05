@@ -272,7 +272,7 @@ This widget demonstrates how the Modulo operator can be used to select items fro
 
 ## Exercise 7: Dark mode
 
-Inside the site header, we have a little sun icon. As of right now, it doesn't do anything. Your mission in this exercise is to wire it up so that it toggles between light mode and dark mode:
+<!-- Inside the site header, we have a little sun icon. As of right now, it doesn't do anything. Your mission in this exercise is to wire it up so that it toggles between light mode and dark mode:
 
 ![Toggling between light mode and dark mode](/docs/dark-mode-toggle.gif)
 
@@ -287,7 +287,7 @@ Inside the root layout (`/src/app/layout.js`), you'll see that the theme is curr
 
 **Resources:**
 
-- [“Dark Mode” lesson](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/11-dark-mode)
+- [“Dark Mode” lesson](https://courses.joshwcomeau.com/joy-of-react/06-full-stack-react/11-dark-mode) -->
 
 ---
 
